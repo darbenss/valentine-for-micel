@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Great+Vibes&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #f0f9ff;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
